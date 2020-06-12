@@ -20,5 +20,5 @@ setInterval(function() {
 	const four = Math.floor(counter / 1000);
 	counter++;
 
-	ReactDOM.render(<Counter />, document.querySelector("#app"));
+	ReactDOM.render(<Counter digitOne={} digitTwo={} digitThree={} digitFour={} />, document.querySelector("#app"));
 }, 1000);
