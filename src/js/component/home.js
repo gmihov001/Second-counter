@@ -2,15 +2,15 @@ import React from "react";
 import PropTypes from "prop-types";
 
 //create your first component
-export function Counter() {
+export function Counter(props) {
 	return (
 		<div className="text-center mt-5">
 			<h1>Seconds counter</h1>
 			<div className="counter">
-				<div className="one">0</div>
-				<div className="two">0</div>
-				<div className="three">0</div>
-				<div className="four">0</div>
+                <div className="one">{props.digitOne}</div>
+				<div className="two">{props.digitTwo}</div>
+				<div className="three">{props.digitThree}</div>
+				<div className="four">{props.digitFour}</div>
 			</div>
 		</div>
 	);
@@ -21,4 +21,4 @@ Counter.protoTypes = {
 	digitTwo: PropTypes.number,
 	digitThree: PropTypes.number,
 	digitFour: PropTypes.number
-};
+}
